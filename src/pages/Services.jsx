@@ -17,7 +17,7 @@ export default function Services() {
           {/* Garbage Collection */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <img
-              src="https://images.unsplash.com/photo-1604668915347-56595bda6e1b?auto=format&fit=crop&w=500&q=60"
+              src="/garbage-collection.png"
               alt="Garbage Collection"
               className="w-full h-40 object-cover rounded mb-4"
             />
@@ -32,7 +32,7 @@ export default function Services() {
           {/* Fumigation */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <img
-              src="https://images.unsplash.com/photo-1617727553252-01b5ed7e6226?auto=format&fit=crop&w=500&q=60"
+              src="/fumigation.jpeg"
               alt="Fumigation Service"
               className="w-full h-40 object-cover rounded mb-4"
             />
@@ -47,7 +47,7 @@ export default function Services() {
           {/* Cleaning Services */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <img
-              src="https://images.unsplash.com/photo-1591531512806-61d106c12d0d?auto=format&fit=crop&w=500&q=60"
+              src="/cleaning.jpg"
               alt="Cleaning Services"
               className="w-full h-40 object-cover rounded mb-4"
             />

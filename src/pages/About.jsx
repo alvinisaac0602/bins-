@@ -52,13 +52,10 @@ export default function About() {
         {/* Team Image */}
         <div className="mt-10">
           <img
-            src="https://images.unsplash.com/photo-1581092334651-cba1b9f24b29?auto=format&fit=crop&w=900&q=60"
-            alt="Our Team at Work"
-            className="rounded shadow-lg w-full object-cover h-64"
+            src="/team.jpg"
+            alt="Our Team"
+            className="w-full max-w-xl h-auto object-cover rounded-md shadow-lg"
           />
-          <p className="text-sm text-gray-500 text-center mt-2">
-            Our dedicated team in action
-          </p>
         </div>
       </div>
     </div>

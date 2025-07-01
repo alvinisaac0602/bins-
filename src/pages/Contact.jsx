@@ -4,6 +4,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
 
@@ -21,7 +22,7 @@ export default function Contact() {
     console.log("Form submitted:", formData);
 
     // Reset form
-    setFormData({ name: "", email: "", message: "" });
+    setFormData({ name: "", email: "", phone: "", message: "" });
 
     alert(
       "Thank you for reaching out to Bins Uganda. We'll get back to you soon!"
@@ -70,6 +71,24 @@ export default function Contact() {
               name="email"
               required
               value={formData.email}
+              onChange={handleChange}
+              className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-600"
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="phone"
+              className="block font-semibold text-gray-700 mb-1"
+            >
+              Phone
+            </label>
+            <input
+              type="tel"
+              name="phone"
+              pattern="[0-9+()-\s]*"
+              placeholder="+256 700 000000"
+              value={formData.phone}
               onChange={handleChange}
               className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-600"
             />
