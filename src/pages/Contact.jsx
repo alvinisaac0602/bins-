@@ -1,9 +1,105 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // For now just log, later send to backend or email service
+    console.log("Form submitted:", formData);
+
+    // Reset form
+    setFormData({ name: "", email: "", message: "" });
+
+    alert(
+      "Thank you for reaching out to Bins Uganda. We'll get back to you soon!"
+    );
+  };
+
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-blue-500">Contact Us</h1>
+    <div className="bg-gray-50 min-h-screen p-8">
+      <div className="max-w-3xl mx-auto bg-white rounded shadow p-8">
+        <h1 className="text-3xl font-bold text-green-700 mb-6 text-center">
+          Contact Us
+        </h1>
+
+        <p className="text-gray-700 mb-8 text-center">
+          Have a question, need a quote, or want to schedule a service? Fill out
+          the form below and we’ll be in touch shortly.
+        </p>
+
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div>
+            <label
+              htmlFor="name"
+              className="block font-semibold text-gray-700 mb-1"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              required
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-600"
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="email"
+              className="block font-semibold text-gray-700 mb-1"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              name="email"
+              required
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-600"
+            />
+          </div>
+
+          <div>
+            <label
+              htmlFor="message"
+              className="block font-semibold text-gray-700 mb-1"
+            >
+              Message
+            </label>
+            <textarea
+              name="message"
+              rows="5"
+              required
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring-2 focus:ring-green-600"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            className="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
