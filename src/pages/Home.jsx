@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const heroImages = ["/hero.jpg", "/hero1.jpg", "bins/public/hero2.jpg"]; // Make sure these exist in /public
+const heroImages = ["/hero.jpg", "/hero1.jpg", "/hero2.jpg"]; // Make sure these exist in /public
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,7 +25,7 @@ export default function Home() {
           backgroundImage: `url(${heroImages[currentIndex]})`,
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        {/* <div className="absolute inset-0 bg-black bg-opacity-95"></div> */}
 
         <div className="relative z-10 text-center px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 mt-16 drop-shadow-md">
@@ -99,7 +99,7 @@ export default function Home() {
             <img
               src="/team.jpg"
               alt="John Doe"
-              className="w-72 h-72 object-cover rounded-md shadow-lg "
+              className="w-full max-w-xl h-auto object-cover rounded-md shadow-lg"
             />
           </div>
           <p className="text-gray-700 text-base md:text-lg max-w-xl">
@@ -137,7 +137,7 @@ export default function Home() {
             </a>
             <a
               href="/services"
-              className="inline-block border-2 border-white text-white font-semibold px-8 py-3 rounded hover:bg-white hover:text-green-700 transition"
+              className="inline-block border-2 border-white  font-semibold px-8 py-3 rounded hover:bg-white hover:text-green-700 transition"
             >
               Explore Services
             </a>
