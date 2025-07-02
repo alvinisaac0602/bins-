@@ -36,7 +36,7 @@ export default function Home() {
             Kampala
           </p>
           <Link to="/services">
-            <button className="mt-6 bg-white text-green-700 font-semibold px-6 py-2 rounded hover:bg-gray-200 transition">
+            <button className="mt-6 bg-white text-green-700 font-semibold px-6 py-2 rounded hover:bg-gray-200 transition cursor-pointer">
               Explore Services
             </button>
           </Link>
