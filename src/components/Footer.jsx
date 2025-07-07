@@ -21,8 +21,8 @@ export default function Footer() {
         {/* Contact Info */}
         <div>
           <h4 className="text-md font-semibold mb-2">Contact Us</h4>
-          <p>Phone: +256 700 000000</p>
-          <p>Email: info@binsuganda.com</p>
+          <p>Phone: +256 772 594470/ +256 702 594470</p>
+          <p>Email: bins_pau@yahoo.com</p>
           <p>Location: Kampala, Uganda</p>
         </div>
 

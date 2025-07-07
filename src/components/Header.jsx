@@ -12,7 +12,9 @@ export default function Header() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img src="/logo.png" alt="Bins Logo" className="h-16 w-16" />
-          <span className="font-bold text-xl text-gray-800">Bins Uganda</span>
+          <span className="font-bold text-xl text-gray-800">
+            Bins Kampala Abakasasiro
+          </span>
         </Link>
 
         {/* Desktop Menu */}

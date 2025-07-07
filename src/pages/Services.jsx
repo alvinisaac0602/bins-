@@ -17,7 +17,7 @@ export default function Services() {
           {/* Garbage Collection */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <img
-              src="/garbage-collection.png"
+              src="/trash.jpg"
               alt="Garbage Collection"
               className="w-full h-40 object-cover rounded mb-4"
             />

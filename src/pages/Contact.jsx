@@ -21,10 +21,10 @@ export default function Contact() {
 
     emailjs
       .send(
-        "service_i6ky6de",
-        "template_j2q29m6",
+        "service_vyrzwfc",
+        "template_cb6lca9",
         formData,
-        "oDYRzgq3hY9Hn2WT5"
+        "bP_oUslsDLMOJ4LRv"
       )
       .then(
         (result) => {
