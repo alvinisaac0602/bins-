@@ -37,7 +37,7 @@ export default function Home() {
             Welcome to <span className="text-yellow-400">Bins Kampala</span>
           </h1>
           <div className="flex justify-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-black animate-fadeInUp drop-shadow-lg" style={{ animationDelay: "0.1s", marginLeft: "-8rem" }}>
+            <h2 className="text-5x1 md:text-6xl font-bold text-white animate-fadeInUp drop-shadow-lg" style={{ animationDelay: "0.1s", marginLeft: "20rem" }}>
               Aba Kasasiro
             </h2>
           </div>
