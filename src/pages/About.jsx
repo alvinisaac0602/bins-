@@ -80,7 +80,7 @@ export default function About() {
               </div>
               <div className="space-y-2">
                 <p className="text-gray-700 font-medium">📍 Location:</p>
-                <p className="text-gray-600">Mukono Town Center</p>
+                <p className="text-gray-600">Jinja-Kampala Road Plot 820</p>
                 <p className="text-gray-600">Mukono, Uganda</p>
               </div>
               <div className="mt-4 p-3 bg-blue-100 rounded-lg">
@@ -236,7 +236,7 @@ export default function About() {
               {/* Main Team Image */}
               <div className="relative">
                 <img
-                  src="/team.jpg"
+                  src="/public/WhatsApp Image6 2026-03-17 at 10.01.36.jpeg"
                   alt="Our Team"
                   className="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
                 />
@@ -248,7 +248,7 @@ export default function About() {
               {/* WhatsApp Team Image */}
               <div className="relative">
                 <img
-                  src="/team1.jpg"
+                  src="/public/WhatsApp Image5 2026-03-17 at 10.02.48.jpeg"
                   alt="Team Meeting"
                   className="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
                 />

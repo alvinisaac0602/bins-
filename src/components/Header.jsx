@@ -96,54 +96,60 @@ export default function Header() {
         {/* Hamburger Icon */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-white focus:outline-none text-2xl"
+          className="md:hidden text-white focus:outline-none text-2xl p-2 rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-110"
         >
-          {menuOpen ? <FaTimes /> : <FaBars />}
+          {menuOpen ? <FaTimes className="animate-rotateIn" /> : <FaBars className="animate-bounceIn" />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-gradient-to-b from-black to-gray-900 px-6 pb-4 space-y-2 font-semibold text-white animate-slideDown">
+        <div className="md:hidden bg-gradient-to-b from-black to-gray-900 px-6 pb-4 space-y-2 font-semibold text-white animate-slideDown overflow-hidden">
           <Link
             to="/"
             onClick={toggleMenu}
-            className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300"
+            className="block py-3 px-4 rounded-lg hover:bg-white/20 transition-all duration-300 hover:translate-x-2 border-l-4 border-transparent hover:border-yellow-400"
+            style={{ animationDelay: "0.1s" }}
           >
             Home
           </Link>
           <Link
             to="/about"
             onClick={toggleMenu}
-            className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300"
+            className="block py-3 px-4 rounded-lg hover:bg-white/20 transition-all duration-300 hover:translate-x-2 border-l-4 border-transparent hover:border-yellow-400"
+            style={{ animationDelay: "0.2s" }}
           >
             About
           </Link>
           <Link
             to="/services"
             onClick={toggleMenu}
-            className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300"
+            className="block py-3 px-4 rounded-lg hover:bg-white/20 transition-all duration-300 hover:translate-x-2 border-l-4 border-transparent hover:border-yellow-400"
+            style={{ animationDelay: "0.3s" }}
           >
             Services
           </Link>
           <Link
             to="/payments"
             onClick={toggleMenu}
-            className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300"
+            className="block py-3 px-4 rounded-lg hover:bg-white/20 transition-all duration-300 hover:translate-x-2 border-l-4 border-transparent hover:border-yellow-400"
+            style={{ animationDelay: "0.4s" }}
           >
             Payments
           </Link>
           <Link
             to="/news"
             onClick={toggleMenu}
-            className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300"
+            className="block py-3 px-4 rounded-lg hover:bg-white/20 transition-all duration-300 hover:translate-x-2 border-l-4 border-transparent hover:border-yellow-400"
+            style={{ animationDelay: "0.5s" }}
           >
             News & Events
           </Link>
           <Link
             to="/contact"
             onClick={toggleMenu}
-            className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300"
+            className="block py-3 px-4 rounded-lg hover:bg-white/20 transition-all duration-300 hover:translate-x-2 border-l-4 border-transparent hover:border-yellow-400"
+            style={{ animationDelay: "0.6s" }}
           >
             Contact
           </Link>
