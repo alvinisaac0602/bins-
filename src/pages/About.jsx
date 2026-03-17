@@ -236,7 +236,7 @@ export default function About() {
               {/* Main Team Image */}
               <div className="relative">
                 <img
-                  src="/WhatsApp Image6 2026-03-17 at 10.01.36.jpeg"
+                  src="/team-dedicated.jpg"
                   alt="Our Team"
                   className="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
                 />
@@ -248,7 +248,7 @@ export default function About() {
               {/* WhatsApp Team Image */}
               <div className="relative">
                 <img
-                  src="/WhatsApp Image5 2026-03-17 at 10.02.48.jpeg"
+                  src="/team-meeting.jpg"
                   alt="Team Meeting"
                   className="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
                 />
