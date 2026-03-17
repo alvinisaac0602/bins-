@@ -31,6 +31,103 @@ export default function About() {
           </p>
         </div>
 
+        {/* Our Locations */}
+        <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-12">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our <span className="text-yellow-600">Locations</span>
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Serving communities across Uganda with our comprehensive waste management services
+            </p>
+            <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-yellow-600 mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Main Branch - Kampala */}
+            <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl p-6 border-l-4 border-yellow-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                <div className="bg-yellow-500 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mr-4">
+                  🏢
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">Main Branch</h3>
+                  <p className="text-yellow-600 font-semibold">Kampala</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <p className="text-gray-700 font-medium">📍 Location:</p>
+                <p className="text-gray-600">Kansanga along Ggaba Road</p>
+                <p className="text-gray-600">Kampala, Uganda</p>
+              </div>
+              <div className="mt-4 p-3 bg-yellow-100 rounded-lg">
+                <p className="text-sm text-yellow-800 font-medium">
+                  ✓ Headquarters & Main Operations
+                </p>
+              </div>
+            </div>
+
+            {/* Mukono Branch */}
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-6 border-l-4 border-blue-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                <div className="bg-blue-500 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mr-4">
+                  🏭
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">Mukono Branch</h3>
+                  <p className="text-blue-600 font-semibold">Mukono District</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <p className="text-gray-700 font-medium">📍 Location:</p>
+                <p className="text-gray-600">Mukono Town Center</p>
+                <p className="text-gray-600">Mukono, Uganda</p>
+              </div>
+              <div className="mt-4 p-3 bg-blue-100 rounded-lg">
+                <p className="text-sm text-blue-800 font-medium">
+                  ✓ Local Collection Services
+                </p>
+              </div>
+            </div>
+
+            {/* Entebbe Branch */}
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-6 border-l-4 border-green-500 hover:shadow-lg transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                <div className="bg-green-500 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mr-4">
+                  🌿
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">Entebbe Branch</h3>
+                  <p className="text-green-600 font-semibold">Entebbe District</p>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <p className="text-gray-700 font-medium">📍 Location:</p>
+                <p className="text-gray-600">Entebbe Central</p>
+                <p className="text-gray-600">Entebbe, Uganda</p>
+              </div>
+              <div className="mt-4 p-3 bg-green-100 rounded-lg">
+                <p className="text-sm text-green-800 font-medium">
+                  ✓ Environmental Services
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Service Coverage Note */}
+          <div className="mt-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
+            <div className="flex items-start gap-3">
+              <div className="text-2xl">📞</div>
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-2">Service Coverage</h4>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  Our branches work together to provide comprehensive waste management coverage across Kampala Metropolitan Area, Mukono, and Entebbe districts. Contact any of our locations for personalized service quotes and scheduling.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Company Profile Download */}
         <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-xl shadow-lg p-8 mb-12 border-l-4 border-yellow-500">
           <div className="flex flex-col md:flex-row items-center justify-between">
