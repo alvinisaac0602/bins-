@@ -166,18 +166,17 @@ export default function Home() {
       <section className="bg-white p-10">
         <h2 className="text-2xl font-bold mb-6 text-center">The Managers</h2>
         <div className="flex flex-col md:flex-row items-stretch max-w-6xl mx-auto px-4 gap-8 my-12">
-          {/* Image container: fills height, width smaller */}
-          <div className="w-full md:w-1/3 flex justify-center">
+          {/* Image container: larger and more prominent */}
+          <div className="w-full md:w-1/2 flex justify-center">
             <img
               src="/executiveteam.jpg"
               alt="Executive Team"
-              className="h-full max-h-[400px] object-contain rounded-md"
-              style={{ maxWidth: "200px" }} // controls width to make it smaller
+              className="w-full max-w-2xl h-auto object-cover rounded-xl shadow-2xl hover:scale-105 transition-transform duration-500"
             />
           </div>
 
           {/* Text container */}
-          <div className="w-full md:w-2/3 flex items-center">
+          <div className="w-full md:w-1/2 flex items-center">
             <p className="text-gray-700 text-lg leading-relaxed">
               Meet our dedicated management team committed to delivering
               excellence in waste management, cleaning, and fumigation services.
