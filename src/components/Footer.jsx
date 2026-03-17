@@ -37,7 +37,7 @@ export default function Footer() {
             {/* Social Links */}
             <div className="flex gap-4 pt-4">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/binskampalaltd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition-all duration-300 transform hover:scale-110"
@@ -45,7 +45,7 @@ export default function Footer() {
                 <FaFacebookF size={18} />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/BinsKampala"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-400 hover:bg-blue-500 p-3 rounded-full transition-all duration-300 transform hover:scale-110"
