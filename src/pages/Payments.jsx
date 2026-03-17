@@ -81,9 +81,9 @@ export default function Payments() {
               </p>
               <div className="bg-gray-50 p-4 rounded-lg">
                 <p className="text-sm text-gray-600 mb-2"><strong>Account Name:</strong> Bins Kampala Ltd</p>
-                <p className="text-sm text-gray-600 mb-2"><strong>Account Number:</strong> 1234567890</p>
-                <p className="text-sm text-gray-600 mb-2"><strong>Bank:</strong> Centenary Bank</p>
-                <p className="text-sm text-gray-600"><strong>Swift Code:</strong> CERBUGKA</p>
+                <p className="text-sm text-gray-600 mb-2"><strong>Account Number:</strong> xxxxxxxx</p>
+                <p className="text-sm text-gray-600 mb-2"><strong>Bank:</strong> xxxx</p>
+                <p className="text-sm text-gray-600"><strong>Swift Code:</strong> xxxxx</p>
               </div>
             </div>
 
