@@ -16,7 +16,7 @@ export default function About() {
         {/* Heading */}
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
-            About <span className="text-yellow-600">Bins Kampala</span>
+            About <span className="text-yellow-600">Bins <Kampala></Kampala></span>
           </h1>
           <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-yellow-600 mx-auto rounded-full"></div>
         </div>
@@ -236,7 +236,7 @@ export default function About() {
               {/* Main Team Image */}
               <div className="relative">
                 <img
-                  src="/public/WhatsApp Image6 2026-03-17 at 10.01.36.jpeg"
+                  src="/WhatsApp Image6 2026-03-17 at 10.01.36.jpeg"
                   alt="Our Team"
                   className="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
                 />
@@ -248,7 +248,7 @@ export default function About() {
               {/* WhatsApp Team Image */}
               <div className="relative">
                 <img
-                  src="/public/WhatsApp Image5 2026-03-17 at 10.02.48.jpeg"
+                  src="/WhatsApp Image5 2026-03-17 at 10.02.48.jpeg"
                   alt="Team Meeting"
                   className="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
                 />
