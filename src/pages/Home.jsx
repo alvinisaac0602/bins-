@@ -36,9 +36,11 @@ export default function Home() {
           <h1 className="text-5xl md:text-6xl font-black mb-2 leading-tight animate-fadeInUp drop-shadow-lg">
             Welcome to <span className="text-yellow-400">Bins Kampala</span>
           </h1>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black animate-fadeInUp drop-shadow-lg" style={{ animationDelay: "0.1s" }}>
-            Aba Kasasiro
-          </h2>
+          <div className="flex justify-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-black animate-fadeInUp drop-shadow-lg" style={{ animationDelay: "0.1s", marginLeft: "-8rem" }}>
+              Aba Kasasiro
+            </h2>
+          </div>
           <p className="text-xl md:text-2xl mb-8 text-gray-100 drop-shadow-md animate-fadeInUp" style={{ animationDelay: "0.2s" }}>
             Reliable Garbage Collection, Fumigation & Cleaning Services in Kampala
           </p>

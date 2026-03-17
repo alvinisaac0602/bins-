@@ -16,7 +16,7 @@ export default function About() {
         {/* Heading */}
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
-            About <span className="text-yellow-600">Bins Uganda</span>
+            About <span className="text-yellow-600">Bins Kampala</span>
           </h1>
           <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-yellow-600 mx-auto rounded-full"></div>
         </div>
@@ -24,7 +24,7 @@ export default function About() {
         {/* Introduction */}
         <div className="bg-white rounded-xl shadow-lg p-8 md:p-12 mb-12">
           <p className="text-gray-700 text-xl leading-relaxed mb-6">
-            Bins Uganda is a <span className="font-semibold text-yellow-600">trusted waste management company</span> based in Kampala. We specialize in garbage collection, fumigation, and professional cleaning services. Our goal is to promote a cleaner, healthier environment for homes, businesses, and communities across Uganda.
+            Bins Kampala is a <span className="font-semibold text-yellow-600">trusted waste management company</span> based in Kampala. We specialize in garbage collection, fumigation, and professional cleaning services. Our goal is to promote a cleaner, healthier environment for homes, businesses, and communities across Uganda.
           </p>
           <p className="text-gray-600 text-lg">
             With years of experience and a dedicated team of professionals, we've established ourselves as a reliable partner in environmental hygiene and waste management solutions.
