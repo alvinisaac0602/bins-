@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -7,39 +8,60 @@ export default function Header() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <header className="bg-[#FFFF01] shadow-md">
+    <header className="bg-gradient-to-r from-black to-gray-800 shadow-lg sticky top-0 z-50">
       <div className="flex items-center justify-between p-4 max-w-7xl mx-auto">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <img src="/logo.png" alt="Bins Logo" className="h-16 w-16" />
-          <span className="font-bold text-xl text-gray-800">
-            Bins Kampala Abakasasiro
-          </span>
+        <Link to="/" className="flex items-center gap-3 group">
+          <div className="relative">
+            <img 
+              src="/logo.png" 
+              alt="Bins Logo" 
+              className="h-16 w-16 transition-transform duration-300 group-hover:scale-110" 
+            />
+          </div>
+          <div className="hidden sm:block">
+            <span className="font-bold text-2xl text-yellow-400">
+              Bins Kampala Aba Kasasiro
+            </span>
+            <p className="text-xs text-yellow-100">Waste Management Solutions</p>
+          </div>
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-8 font-medium text-gray-700 text-sm sm:text-lg">
+        <nav className="hidden md:flex gap-8 font-semibold text-white text-sm sm:text-base">
           <Link
             to="/"
-            className="hover:text-green-700 hover:underline underline-offset-4"
+            className="relative py-2 px-3 rounded-lg transition-all duration-300 hover:bg-white/20 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-yellow-300 after:transition-all after:duration-300 hover:after:w-full"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="hover:text-green-700 hover:underline underline-offset-4"
+            className="relative py-2 px-3 rounded-lg transition-all duration-300 hover:bg-white/20 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-yellow-300 after:transition-all after:duration-300 hover:after:w-full"
           >
             About
           </Link>
           <Link
             to="/services"
-            className="hover:text-green-700 hover:underline underline-offset-4"
+            className="relative py-2 px-3 rounded-lg transition-all duration-300 hover:bg-white/20 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-yellow-300 after:transition-all after:duration-300 hover:after:w-full"
           >
             Services
           </Link>
           <Link
+            to="/payments"
+            className="relative py-2 px-3 rounded-lg transition-all duration-300 hover:bg-white/20 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-yellow-300 after:transition-all after:duration-300 hover:after:w-full"
+          >
+            Payments
+          </Link>
+          <Link
+            to="/news"
+            className="relative py-2 px-3 rounded-lg transition-all duration-300 hover:bg-white/20 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-yellow-300 after:transition-all after:duration-300 hover:after:w-full"
+          >
+            News & Events
+          </Link>
+          <Link
             to="/contact"
-            className="hover:text-green-700 hover:underline underline-offset-4"
+            className="relative py-2 px-3 rounded-lg transition-all duration-300 hover:bg-white/20 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-1 after:bg-yellow-300 after:transition-all after:duration-300 hover:after:w-full"
           >
             Contact
           </Link>
@@ -48,44 +70,54 @@ export default function Header() {
         {/* Hamburger Icon */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-800 focus:outline-none"
+          className="md:hidden text-white focus:outline-none text-2xl"
         >
-          {menuOpen ? (
-            <span className="text-2xl">&#x2715;</span> // ✕
-          ) : (
-            <span className="text-2xl">&#9776;</span> // ☰
-          )}
+          {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden px-6 pb-4 space-y-2 bg-[#FFFF01] font-medium text-gray-800 text-sm sm:text-base">
+        <div className="md:hidden bg-gradient-to-b from-black to-gray-900 px-6 pb-4 space-y-2 font-semibold text-white animate-slideDown">
           <Link
             to="/"
             onClick={toggleMenu}
-            className="block hover:text-green-700"
+            className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300"
           >
             Home
           </Link>
           <Link
             to="/about"
             onClick={toggleMenu}
-            className="block hover:text-green-700"
+            className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300"
           >
             About
           </Link>
           <Link
             to="/services"
             onClick={toggleMenu}
-            className="block hover:text-green-700"
+            className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300"
           >
             Services
           </Link>
           <Link
+            to="/payments"
+            onClick={toggleMenu}
+            className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300"
+          >
+            Payments
+          </Link>
+          <Link
+            to="/news"
+            onClick={toggleMenu}
+            className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300"
+          >
+            News & Events
+          </Link>
+          <Link
             to="/contact"
             onClick={toggleMenu}
-            className="block hover:text-green-700"
+            className="block py-2 px-4 rounded-lg hover:bg-white/20 transition-all duration-300"
           >
             Contact
           </Link>

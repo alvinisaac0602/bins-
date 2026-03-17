@@ -1,71 +1,144 @@
 import React from "react";
+import { FaCheckCircle, FaPhone, FaTruck } from "react-icons/fa";
 
 export default function Services() {
+  const services = [
+    {
+      id: 1,
+      title: "Garbage Collection",
+      icon: FaTruck,
+      image: "/trash.jpg",
+      description:
+        "Regular waste collection for households, businesses, and institutions. We ensure responsible disposal, recycling, and cleaner surroundings.",
+      features: ["Scheduled pickups", "Eco-friendly disposal", "Large capacity trucks", "Professional team"],
+    },
+    {
+      id: 2,
+      title: "Fumigation",
+      icon: FaCheckCircle,
+      image: "/fumigation.jpeg",
+      description:
+        "Effective pest and insect control for homes, offices, and public spaces — using safe, certified chemicals to protect your environment.",
+      features: ["Certified professionals", "Safe chemicals", "Long-term solutions", "Quick response"],
+    },
+    {
+      id: 3,
+      title: "Cleaning Services",
+      icon: FaCheckCircle,
+      image: "/cleaning.jpg",
+      description:
+        "From general home and office cleaning to deep post-construction cleanup — our team is trained to leave every space spotless.",
+      features: ["Deep cleaning", "Post-construction cleanup", "Office maintenance", "24/7 available"],
+    },
+  ];
+
   return (
-    <div className="bg-gray-50 min-h-screen p-8">
-      <div className="max-w-6xl mx-auto">
+    <div className="bg-gradient-to-b from-gray-50 to-gray-100 min-h-screen py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Page Header */}
-        <h1 className="text-4xl font-bold text-green-700 mb-6 text-center">
-          Our Services
-        </h1>
-        <p className="text-center text-gray-600 mb-10 text-lg">
-          We offer professional and affordable environmental hygiene solutions
-          across Kampala.
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Garbage Collection */}
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <img
-              src="/trash.jpg"
-              alt="Garbage Collection"
-              className="w-full h-40 object-cover rounded mb-4"
-            />
-            <h2 className="text-xl font-semibold mb-2">Garbage Collection</h2>
-            <p className="text-gray-700">
-              Regular waste collection for households, businesses, and
-              institutions. We ensure responsible disposal, recycling, and
-              cleaner surroundings.
-            </p>
-          </div>
-
-          {/* Fumigation */}
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <img
-              src="/fumigation.jpeg"
-              alt="Fumigation Service"
-              className="w-full h-40 object-cover rounded mb-4"
-            />
-            <h2 className="text-xl font-semibold mb-2">Fumigation</h2>
-            <p className="text-gray-700">
-              Effective pest and insect control for homes, offices, and public
-              spaces — using safe, certified chemicals to protect your
-              environment.
-            </p>
-          </div>
-
-          {/* Cleaning Services */}
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <img
-              src="/cleaning.jpg"
-              alt="Cleaning Services"
-              className="w-full h-40 object-cover rounded mb-4"
-            />
-            <h2 className="text-xl font-semibold mb-2">Cleaning Services</h2>
-            <p className="text-gray-700">
-              From general home and office cleaning to deep post-construction
-              cleanup — our team is trained to leave every space spotless.
-            </p>
-          </div>
+        <div className="text-center mb-16">
+          <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
+            Our <span className="text-yellow-600">Services</span>
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
+            We offer professional and affordable environmental hygiene solutions across Kampala with reliability and excellence.
+          </p>
+          <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-yellow-600 mx-auto rounded-full"></div>
         </div>
 
-        {/* CTA */}
-        <div className="text-center mt-12">
-          <h3 className="text-2xl font-semibold mb-4">
-            Want to schedule a service with us?
+        {/* Services Grid */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          {services.map((service, index) => {
+            const Icon = service.icon;
+            return (
+              <div
+                key={service.id}
+                className="group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-3 animate-fadeInUp"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {/* Image Container */}
+                <div className="relative overflow-hidden h-48">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute top-4 right-4 bg-green-500 p-3 rounded-full shadow-lg transform group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="text-white text-2xl" />
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold mb-3 text-gray-900 group-hover:text-green-600 transition-colors duration-300">
+                    {service.title}
+                  </h2>
+                  <p className="text-gray-600 mb-4 leading-relaxed">
+                    {service.description}
+                  </p>
+
+                  {/* Features */}
+                  <ul className="space-y-2 mb-6">
+                    {service.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-center gap-2 text-sm text-gray-700">
+                        <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* CTA Button */}
+                  <button className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold py-2 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+                    <FaPhone size={16} />
+                    Request Service
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Why Choose Us */}
+        <section className="bg-gradient-to-r from-black to-gray-800 rounded-xl p-8 md:p-12 text-white mb-16">
+          <div className="max-w-3xl">
+            <h3 className="text-3xl md:text-4xl font-bold mb-6">Why Choose Bins Kampala?</h3>
+            <ul className="space-y-4 text-lg">
+              <li className="flex items-center gap-3">
+                <FaCheckCircle className="text-yellow-200 flex-shrink-0" />
+                <span>Professional and trained team with years of experience</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaCheckCircle className="text-yellow-200 flex-shrink-0" />
+                <span>Affordable pricing with transparent fee structure</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaCheckCircle className="text-yellow-200 flex-shrink-0" />
+                <span>Eco-friendly waste management practices</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaCheckCircle className="text-yellow-200 flex-shrink-0" />
+                <span>24/7 customer support and emergency services</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <FaCheckCircle className="text-yellow-200 flex-shrink-0" />
+                <span>Reliable and punctual service delivery</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <div className="text-center bg-white rounded-xl shadow-lg p-12">
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Ready to Get Started?
           </h3>
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Contact us today to schedule a service or get a free consultation for your waste management needs.
+          </p>
           <a href="/contact">
-            <button className="bg-green-700 text-white px-6 py-2 rounded hover:bg-green-800 transition">
+            <button className="bg-gradient-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg text-lg inline-flex items-center gap-2">
+              <FaPhone size={20} />
               Contact Us Now
             </button>
           </a>
