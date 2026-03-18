@@ -81,7 +81,7 @@ export default function Footer() {
                 <div>
                   <p className="text-sm text-gray-300">Phone:</p>
                   <p className="font-semibold">+256 772 594470</p>
-                  <p className="font-semibold">+256 702 594470</p>
+                  <p className="font-semibold">+256 752 594470</p>
                   <p className="font-semibold">+256 741 043511</p>
                 </div>
               </div>

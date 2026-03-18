@@ -141,7 +141,7 @@ export default function Payments() {
 
               <div className="bg-yellow-100 rounded-lg p-4 mb-6 border border-yellow-300">
                 <img
-                  src="/form.png"
+                  src="/form4.jpeg"
                   alt="Normal Collection Service Request Form"
                   className="w-full h-auto rounded-lg shadow-md"
                 />
@@ -149,8 +149,8 @@ export default function Payments() {
 
               <div className="text-center">
                 <a
-                  href="/form.png"
-                  download="Normal_Collection_Form.png"
+                  href="/form4.jpeg"
+                  download="Normal_Collection_Form.jpeg"
                   className="inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                   Download Form
@@ -170,7 +170,7 @@ export default function Payments() {
 
               <div className="bg-gray-50 rounded-lg p-4 mb-6 border border-gray-300">
                 <img
-                  src="/form2.jpeg"
+                  src="/form3.jpeg"
                   alt="Drum Collection Service Request Form"
                   className="w-full h-auto rounded-lg shadow-md"
                 />
@@ -178,7 +178,7 @@ export default function Payments() {
 
               <div className="text-center">
                 <a
-                  href="/form2.jpeg"
+                  href="/form3.jpeg"
                   download="Drum_Collection_Form.jpeg"
                   className="inline-block bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
