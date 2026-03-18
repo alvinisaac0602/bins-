@@ -179,7 +179,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="text-center space-y-2">
           <p className="text-gray-400 text-sm">
-            © 2024 Bins Kampala. All rights reserved. | Waste Management Excellence
+            © {new Date().getFullYear()} Bins Kampala. All rights reserved. | Waste Management Excellence
           </p>
           <div className="flex justify-center gap-4 text-xs text-gray-500">
             <a href="#" className="hover:text-yellow-400 transition-colors duration-300">
