@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../assets/logo.png";
 import {
   FaFacebookF,
   FaTwitter,
@@ -28,7 +29,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 mb-4">
-              <img src="/logo.png" alt="Logo" className="h-12 w-12 rounded-full" />
+              <img src={logo} alt="Logo" className="h-12 w-12 rounded-full" />
               <h3 className="text-xl font-bold text-yellow-400">Bins Kampala</h3>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,7 +41,7 @@ export default function Header() {
         <Link to="/" className="flex items-center gap-3 group">
           <div className="relative">
             <img 
-              src="/logo.png" 
+              src={logo} 
               alt="Bins Logo" 
               className="h-16 w-16 transition-transform duration-300 group-hover:scale-110" 
             />
