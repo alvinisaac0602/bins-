@@ -16,7 +16,7 @@ export default function About() {
         {/* Heading */}
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-black text-gray-900 mb-4">
-            About <span className="text-yellow-600">Bins <Kampala></Kampala></span>
+            About <span className="text-yellow-600">Bins Kampala</span>
           </h1>
           <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-yellow-600 mx-auto rounded-full"></div>
         </div>
@@ -236,7 +236,7 @@ export default function About() {
               {/* Main Team Image */}
               <div className="relative">
                 <img
-                  src="/team-dedicated.jpg"
+                  src="/public/team-dedicated.jpg"
                   alt="Our Team"
                   className="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
                 />
