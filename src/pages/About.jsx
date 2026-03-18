@@ -236,7 +236,7 @@ export default function About() {
               {/* Main Team Image */}
               <div className="relative">
                 <img
-                  src="/public/team-dedicated.jpg"
+                  src="/team-dedicated.jpg"
                   alt="Our Team"
                   className="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
                 />
