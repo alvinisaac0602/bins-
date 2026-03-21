@@ -32,19 +32,17 @@ export default function Home() {
         <div className="absolute top-10 right-10 w-32 h-32 bg-yellow-500/10 rounded-full blur-2xl animate-float"></div>
         <div className="absolute bottom-10 left-10 w-40 h-40 bg-yellow-600/10 rounded-full blur-3xl"></div>
 
-        <div className="relative z-10 text-center px-4 max-w-4xl">
-          <h1 className="text-5xl md:text-6xl font-black mb-2 leading-tight animate-fadeInUp drop-shadow-lg">
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-black mb-2 leading-tight animate-fadeInUp drop-shadow-lg">
             Welcome to <span className="text-yellow-400">Bins Kampala</span>
           </h1>
-          <div className="flex justify-center">
-            <h2 className="text-5x1 md:text-6xl font-bold text-white animate-fadeInUp drop-shadow-lg" style={{ animationDelay: "0.1s", marginLeft: "20rem" }}>
-              Aba Kasasiro
-            </h2>
-          </div>
-          <p className="text-xl md:text-2xl mb-8 text-gray-100 drop-shadow-md animate-fadeInUp" style={{ animationDelay: "0.2s" }}>
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white animate-fadeInUp drop-shadow-lg mb-4">
+            Aba Kasasiro
+          </h2>
+          <p className="text-base sm:text-lg md:text-2xl mb-8 text-gray-100 drop-shadow-md animate-fadeInUp">
             Reliable Garbage Collection, Fumigation & Cleaning Services in Kampala
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center" style={{ animationDelay: "0.4s" }}>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fadeInUp">
             <Link to="/services">
               <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-bold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl text-lg">
                 Explore Services
@@ -82,7 +80,7 @@ export default function Home() {
           </p>
           <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-yellow-600 mx-auto mt-4 rounded-full"></div>
         </div>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {/* Garbage Collection */}
           <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
             <div className="relative overflow-hidden h-40">
