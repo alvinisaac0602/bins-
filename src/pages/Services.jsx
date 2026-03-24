@@ -99,6 +99,73 @@ export default function Services() {
           })}
         </div>
 
+        {/* Service Gallery */}
+        <section className="mb-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Our Work in <span className="text-yellow-600">Action</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Professional waste management and cleaning services delivered with excellence
+            </p>
+            <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-yellow-600 mx-auto mt-4 rounded-full"></div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="relative overflow-hidden rounded-xl shadow-lg group">
+              <img
+                src="/pic1.jpeg"
+                alt="Waste Collection Service"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300"></div>
+              <div className="absolute bottom-4 left-4">
+                <span className="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  Collection
+                </span>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-xl shadow-lg group">
+              <img
+                src="/Pic2.jpeg"
+                alt="Fumigation Service"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300"></div>
+              <div className="absolute bottom-4 left-4">
+                <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  Fumigation
+                </span>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-xl shadow-lg group">
+              <img
+                src="/Pic3.jpeg"
+                alt="Cleaning Service"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300"></div>
+              <div className="absolute bottom-4 left-4">
+                <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  Cleaning
+                </span>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-xl shadow-lg group">
+              <img
+                src="/Pic4.jpeg"
+                alt="Professional Team"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300"></div>
+              <div className="absolute bottom-4 left-4">
+                <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  Our Team
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Why Choose Us */}
         <section className="bg-gradient-to-r from-black to-gray-800 rounded-xl p-8 md:p-12 text-white mb-16">
           <div className="max-w-3xl">

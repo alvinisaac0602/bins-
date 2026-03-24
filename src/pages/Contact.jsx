@@ -62,6 +62,61 @@ Message: ${formData.message}`;
           </p>
         </div>
 
+        {/* Office Gallery */}
+        <div className="mb-12">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+              Visit Our <span className="text-yellow-600">Facilities</span>
+            </h2>
+            <p className="text-gray-600 max-w-xl mx-auto">
+              Professional waste management operations across Kampala
+            </p>
+            <div className="w-16 h-1 bg-gradient-to-r from-yellow-500 to-yellow-600 mx-auto mt-3 rounded-full"></div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="relative overflow-hidden rounded-lg shadow-md group">
+              <img
+                src="/pic1.jpeg"
+                alt="Waste Collection Facility"
+                className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-xs p-2 text-center">
+                Collection Services
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-lg shadow-md group">
+              <img
+                src="/Pic2.jpeg"
+                alt="Fumigation Equipment"
+                className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-xs p-2 text-center">
+                Fumigation
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-lg shadow-md group">
+              <img
+                src="/Pic3.jpeg"
+                alt="Cleaning Supplies"
+                className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-xs p-2 text-center">
+                Cleaning Equipment
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-lg shadow-md group">
+              <img
+                src="/Pic4.jpeg"
+                alt="Professional Team"
+                className="w-full h-32 object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white text-xs p-2 text-center">
+                Our Team
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="grid md:grid-cols-2 gap-8">
           {/* Contact Info Cards */}
           <div className="space-y-6">

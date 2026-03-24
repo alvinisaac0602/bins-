@@ -268,6 +268,61 @@ export default function About() {
           </div>
         </div>
 
+        {/* Service Gallery */}
+        <div className="mb-12">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+              Our <span className="text-yellow-600">Services in Action</span>
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              See our professional waste management and cleaning services at work across Kampala
+            </p>
+            <div className="w-20 h-1 bg-gradient-to-r from-yellow-500 to-yellow-600 mx-auto mt-4 rounded-full"></div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="relative overflow-hidden rounded-xl shadow-lg group">
+              <img
+                src="/pic1.jpeg"
+                alt="Professional Waste Collection Service"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <p className="text-white text-sm font-semibold">Waste Collection</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-xl shadow-lg group">
+              <img
+                src="/Pic2.jpeg"
+                alt="Fumigation Services"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <p className="text-white text-sm font-semibold">Fumigation</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-xl shadow-lg group">
+              <img
+                src="/Pic3.jpeg"
+                alt="Cleaning Services"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <p className="text-white text-sm font-semibold">Professional Cleaning</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-xl shadow-lg group">
+              <img
+                src="/Pic4.jpeg"
+                alt="Team at Work"
+                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                <p className="text-white text-sm font-semibold">Our Team</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Location Map */}
         <div className="mb-12">
           <div className="text-center mb-10">

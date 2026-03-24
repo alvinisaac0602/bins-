@@ -7,6 +7,7 @@ import Payments from "./pages/Payments";
 import News from "./pages/News";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function App() {
   return (
