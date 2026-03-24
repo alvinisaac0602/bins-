@@ -7,7 +7,7 @@ import Payments from "./pages/Payments";
 import News from "./pages/News";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
   return (
@@ -22,6 +22,7 @@ export default function App() {
         <Route path="/news" element={<News />} />
       </Routes>
       <Footer />
+      <Analytics />
     </BrowserRouter>
   );
 }
